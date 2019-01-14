@@ -349,7 +349,4 @@ function draw() {
   setRotation();
 
   draw_sat();
-
-  // angleX = map(mouseY - Height/2, Height, 0, -PI, PI);
-  // angleY = map(mouseX - Width/2, 0, Width, -PI, PI);
 }
