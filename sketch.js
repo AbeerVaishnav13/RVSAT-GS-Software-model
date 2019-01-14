@@ -74,10 +74,10 @@ function setPerspective(FOV) {
 
 function setRotation() {
   if (fullScene) {
-    rotateX(-angleX);
+    rotateX(angleX);
     rotateY(-angleY);
   } else {
-    rotateX(-angleX);
+    rotateX(angleX);
     rotateY(-angleY);
   }
 }
