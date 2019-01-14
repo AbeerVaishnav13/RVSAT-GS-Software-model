@@ -1,0 +1,14 @@
+{
+  "name": "rvsat-gs-software-model",
+  "version": "1.0.0",
+  "description": "3D model of satellite",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Abeer Vaishnav",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^4.0.1"
+  }
+}
