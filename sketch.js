@@ -20,12 +20,10 @@ function mousePressed() {
       fullScene = false;
       offset = 0;
       setPerspective(fov);
-      console.log("Mouse Clicked: Entered inside!");
     } else {
       fullScene = true;
       offset = 0;
       setPerspective(fov);
-      console.log("Mouse Clicked: Viewing outside!");
     }
   }
 }
@@ -156,10 +154,10 @@ function drawSat_in() {
   beginShape();
     push();
       texture(interior_image);
-      vertex(50, 99.9, 50, 0, 0);
-      vertex(50, 99.9, -50, 1, 0);
-      vertex(-50, 99.9, -50, 1, 1);
-      vertex(-50, 99.9, 50, 0, 1);
+      vertex(satWidth/2, satHeight/2 - 0.1, satWidth/2, 0, 0);
+      vertex(satWidth/2, satHeight/2 - 0.1, -satWidth/2, 1, 0);
+      vertex(-satWidth/2, satHeight/2 - 0.1, -satWidth/2, 1, 1);
+      vertex(-satWidth/2, satHeight/2 - 0.1, satWidth/2, 0, 1);
     pop();
   endShape(CLOSE);
 
@@ -167,10 +165,10 @@ function drawSat_in() {
   beginShape();
     push();
       texture(interior_image);
-      vertex(50, -99.9, 50, 0, 0);
-      vertex(50, -99.9, -50, 1, 0);
-      vertex(-50, -99.9, -50, 1, 1);
-      vertex(-50, -99.9, 50, 0, 1);
+      vertex(satWidth/2, -satHeight/2 + 0.1, satWidth/2, 0, 0);
+      vertex(satWidth/2, -satHeight/2 + 0.1, -satWidth/2, 1, 0);
+      vertex(-satWidth/2, -satHeight/2 + 0.1, -satWidth/2, 1, 1);
+      vertex(-satWidth/2, -satHeight/2 + 0.1, satWidth/2, 0, 1);
     pop();
   endShape(CLOSE);
 
@@ -179,10 +177,10 @@ function drawSat_in() {
   beginShape();
     push();
       texture(interior_image);
-      vertex(49.9, 100, 50, 0, 0);
-      vertex(49.9, 100, -50, 1, 0);
-      vertex(49.9, -100, -50, 1, 1);
-      vertex(49.9, -100, 50, 0, 1);
+      vertex(satWidth/2 - 0.1, satHeight/2, satWidth/2, 0, 0);
+      vertex(satWidth/2 - 0.1, satHeight/2, -satWidth/2, 1, 0);
+      vertex(satWidth/2 - 0.1, -satHeight/2, -satWidth/2, 1, 1);
+      vertex(satWidth/2 - 0.1, -satHeight/2, satWidth/2, 0, 1);
     pop();
   endShape(CLOSE);
 
@@ -190,10 +188,10 @@ function drawSat_in() {
   beginShape();
     push();
       texture(interior_image);
-      vertex(50, 100, -49.9, 0, 0);
-      vertex(-50, 100, -49.9, 1, 0);
-      vertex(-50, -100, -49.9, 1, 1);
-      vertex(50, -100, -49.9, 0, 1);
+      vertex(satWidth/2, satHeight/2, -satWidth/2 + 0.1, 0, 0);
+      vertex(-satWidth/2, satHeight/2, -satWidth/2 + 0.1, 1, 0);
+      vertex(-satWidth/2, -satHeight/2, -satWidth/2 + 0.1, 1, 1);
+      vertex(satWidth/2, -satHeight/2, -satWidth/2 + 0.1, 0, 1);
     pop();
   endShape(CLOSE);
 
@@ -201,10 +199,10 @@ function drawSat_in() {
   beginShape();
     push();
       texture(interior_image);
-      vertex(-49.9, 100, -50, 0, 0);
-      vertex(-49.9, 100, 50, 1, 0);
-      vertex(-49.9, -100, 50, 1, 1);
-      vertex(-49.9, -100, -50, 0, 1);
+      vertex(-satWidth/2 + 0.1, satHeight/2, -satWidth/2, 0, 0);
+      vertex(-satWidth/2 + 0.1, satHeight/2, satWidth/2, 1, 0);
+      vertex(-satWidth/2 + 0.1, -satHeight/2, satWidth/2, 1, 1);
+      vertex(-satWidth/2 + 0.1, -satHeight/2, -satWidth/2, 0, 1);
     pop();
   endShape(CLOSE);
 
@@ -212,10 +210,10 @@ function drawSat_in() {
   beginShape();
     push();
       texture(interior_image);
-      vertex(50, 100, 49.9, 0, 0);
-      vertex(-50, 100, 49.9, 1, 0);
-      vertex(-50, -100, 49.9, 1, 1);
-      vertex(50, -100, 49.9, 0, 1);
+      vertex(satWidth/2, satHeight/2, satWidth/2 - 0.1, 0, 0);
+      vertex(-satWidth/2, satHeight/2, satWidth/2 - 0.1, 1, 0);
+      vertex(-satWidth/2, -satHeight/2, satWidth/2 - 0.1, 1, 1);
+      vertex(satWidth/2, -satHeight/2, satWidth/2 - 0.1, 0, 1);
     pop();
   endShape(CLOSE);
 
