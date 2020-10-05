@@ -339,6 +339,9 @@ function setup() {
   createCanvas(Width, Height, WEBGL);
   shineLight();
   setPerspective(PI / 6);
+  createP("Click and drag: change perspective");
+  createP("Right click: See inside");
+  createP("Scroll: view slices by changing clipping plane");
 }
 
 function draw() {
